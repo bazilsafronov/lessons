@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lessons Forms</title>
+</head>
+<body>
+    <!--<form action="https://github.com/bazilsafronov" method="get">
+        <label>
+            Подпись формы с лейблом <input type="text" name="username">
+        </label>
+        <label for="pass">Связываем форму по айдишнику</label><br>
+    </form><br>
+    <form>
+        Подпись с текстом без лейбла <input type="text" name="login">
+        
+        <input id="pass" type="password" name="password">
+    </form>-->
+    <h1>Form Login</h1>
+    <form action="https://github.com/login" method="post">
+        <label for="log">Login</label><br>
+        <input id="log" type="username" name="username"><br><br>
+        <label for="pass">Password</label><br>
+        <input id="pass" type="password" name="password"><br><br>
+        <input type="submit" value="send">
+    </form>
+    <h2>Многострочное поле ввода</h2>
+    <form>
+    <textarea id="comment" rows="30" cols="90"></textarea><br><br>
+    Выключенный чекбокс<br>
+    <input type="checkbox"><br>
+    Включенный чекбокс<br>
+    <input type="checkbox" checked>
+    </form>
+
+    <h3>Radiobuttons</h3>
+    <form action="" method="post">
+        <input type="radio" value="1">
+        <input type="radio" value="2" checked>
+        <input type="submit" value="Send radiobuttons">
+    </form>
+    <h4>Раскрывающийся список, или «селект»</h4>
+    <select name="theme">
+        <option value="light">Light Theme</option>
+        <option value="dark">Dark Theme</option>
+    </select>
+    <select name="cars">
+        <option>BMW 1 series</option>
+        <option>BMW 2 series</option>
+        <option>BMW 3 series</option>
+        <option selected>BMW 5 series</option>
+    </select>
+    <h5>Поле для загрузки файлов</h5>
+    <form action="" method="post" enctype="multipard/form-data">
+    <input type="submit" value="Download"><br>
+    <input type="file">
+    <input type="hidden" value="Скрыто">
+    </form>
+</body>
+</html>
